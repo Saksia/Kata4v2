@@ -16,11 +16,13 @@ public class Kata4v3 {
         String to = "C:\\Users\\usuario\\Desktop\\pruebakata(1).pdf";
         InputStream input = new BufferedInputStream(new FileInputStream(new File(from)));
         OutputStream output = new BufferedOutputStream(new FileOutputStream(new File(to)));
+        long start = System.currentTimeMillis();
         while(true){
             int read = input.read();
             if(read < 0) break;
             output.write(read);
         }
+        System.out.println(System.currentTimeMillis()-start);
         input.close();
         output.flush();
         output.close();
