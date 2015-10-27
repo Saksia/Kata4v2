@@ -12,8 +12,8 @@ import java.io.OutputStream;
 
 public class Kata4v3 {
     public static void main(String[] args) throws FileNotFoundException, IOException {
-        String from = "C:\\Users\\usuario\\Desktop\\hola.txt";
-        String to = "C:\\Users\\usuario\\Desktop\\hola (1).txt";
+        String from = "C:\\Users\\usuario\\Desktop\\mail.txt";
+        String to = "C:\\Users\\usuario\\Desktop\\mail (1).txt";
         InputStream input = new BufferedInputStream(new FileInputStream(new File(from)));
         OutputStream output = new BufferedOutputStream(new FileOutputStream(new File(to)));
         long start = System.currentTimeMillis();
